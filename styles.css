@@ -36,20 +36,26 @@ body {
 
 .container__page {
   position: relative;
+  padding-top: 30px;
 }
 
 .container__page {
   position: relative;
-  min-height: 50vh; // optional - it may not help with responsiveness
+  width: 375px;
+  min-height: 100vh;
 }
 
 .container__content {
   padding-bottom: 2.5rem; /* Footer height */
+
+  background-image: url(../images/bg-intro-mobile.png);
+  background-repeat: repeat;
+  background-color: var(--color-red);
 }
 
 .attribution {
   position: absolute;
-  bottom: 0;
+  bottom: -10%;
   width: 100%;
   height: 2.5rem; /* Footer height */
 
@@ -61,4 +67,132 @@ body {
 
 .attribution a {
   color: blue;
+}
+
+/* Styling */
+
+h1 {
+  padding-top: 58px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 16px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.text__body {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 44px;
+}
+
+.container__trial {
+  background-color: var(--color-blue);
+  width: 327px;
+  height: 88px;
+  margin: 0 auto;
+  border-radius: 10px 10px;
+  padding: 18px 66px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.container__form {
+  background-color: white;
+  width: 327px;
+  height: 500px;
+  margin: 0 auto;
+  margin-top: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  border-radius: 10px 10px;
+}
+
+input {
+  width: 279px;
+  height: 56px;
+  margin-top: 24px;
+  border-radius: 5px;
+  border: 1px solid rgb(203, 201, 201);
+  padding-left: 14px;
+}
+
+button {
+  background-color: var(--color-green);
+  width: 279px;
+  height: 56px;
+  margin-top: 16px;
+  border-radius: 5px;
+  border: 1px solid var(--color-green);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.text__terms {
+  width: 80%;
+  margin: 18px auto;
+}
+
+/* Typography */
+
+h1 {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text__body {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.text__trial {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.267857px;
+  color: #ffffff;
+}
+
+.text__trial--bold {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.267857px;
+  color: #ffffff;
+}
+
+input {
+  font-weight: bold;
+}
+
+button {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.text__terms {
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+  color: #bab7d4;
+}
+
+.text__terms--highlight {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 21px;
+  text-align: center;
+  color: #ff7979;
 }
